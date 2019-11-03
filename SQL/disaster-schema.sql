@@ -2,7 +2,7 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/YG3XLa
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 -- Execute this on new database fema_disasters_db
-drop table DATA_SOURCE;
+
 CREATE TABLE DATA_SOURCE (
     ID serial primary key,
     DATA_SOURCE VARCHAR UNIQUE  NOT NULL,
