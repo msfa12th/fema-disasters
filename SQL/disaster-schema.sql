@@ -16,7 +16,6 @@ CREATE TABLE NATURAL_DISASTER (
     event_date date   NOT NULL,
     event_type varchar   NOT NULL,
     state varchar   NOT NULL,
-    event_rank integer   NOT NULL,
     CONSTRAINT pk_NATURAL_DISASTER PRIMARY KEY (
         DATA_SOURCE,EVENT_ID
      )
@@ -66,8 +65,6 @@ CREATE TABLE WILD_FIRE (
     ID int   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
     OBJECTID varchar   NOT NULL,
-    X FLOAT   NOT NULL,
-    Y FLOAT   NOT NULL,
     FOD_ID INTEGER   NULL,
     FPA_ID VARCHAR   NULL,
     SOURCE_SYSTEM_TYPE VARCHAR   NULL,
