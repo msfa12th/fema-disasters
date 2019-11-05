@@ -1,0 +1,1 @@
+cat wildfiredata_*.csv > wildfirerawdata.csv
