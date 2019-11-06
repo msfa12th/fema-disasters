@@ -1,9 +1,3 @@
--- FEMA DISASTERS ETL Project
--- disaster-source.sql
--- SQL to populate data_source table
--- by Mary Brown
-
--- populate data_source table
 -- fema_disasters_db database
 -- add source info to DATA_SOURCE table
 

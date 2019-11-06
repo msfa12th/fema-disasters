@@ -1,8 +1,3 @@
--- FEMA DISASTERS ETL Project
--- disaster-db.sql
--- SQL to create database
--- by Mary Brown
-
 -- Database: fema_disasters_db
 
 -- DROP DATABASE fema_disasters_db;

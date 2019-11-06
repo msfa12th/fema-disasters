@@ -1,17 +1,8 @@
--- FEMA DISASTERS ETL Project
--- disaster-schema.sql
--- SQL to create schema/tables
--- by Mary Brown
-
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/YG3XLa
--- with customizations
--- 
+-- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+-- Execute this on new database fema_disasters_db
 
--- Execute this script to create schema 
--- after new database fema_disasters_db, created using disaster-db.sql
-
---select * from data_source;
 CREATE TABLE DATA_SOURCE (
     ID serial primary key,
     DATA_SOURCE VARCHAR UNIQUE  NOT NULL,
@@ -19,12 +10,9 @@ CREATE TABLE DATA_SOURCE (
     SOURCE_TYPE varchar   NOT NULL
 );
 
-
---drop table natural_disaster;
---select * from natural_disaster;
 CREATE TABLE NATURAL_DISASTER (
-    EVENT_ID integer   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
+    EVENT_ID varchar   NOT NULL,
     event_date date   NOT NULL,
     event_type varchar   NOT NULL,
     state varchar   NOT NULL,
@@ -32,8 +20,6 @@ CREATE TABLE NATURAL_DISASTER (
         DATA_SOURCE,EVENT_ID
      )
 );
-
-
 
 CREATE TABLE LOCATION (
     ZipCode VARCHAR   NOT NULL,
@@ -47,7 +33,7 @@ CREATE TABLE LOCATION (
         ZipCode
      )
 );
---drop TABLE FEMA;
+
 CREATE TABLE FEMA (
     ID int   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
@@ -61,31 +47,67 @@ CREATE TABLE FEMA (
     Disaster_Type varchar   NULL,
     Incident_Type varchar   NULL,
     Title varchar   NULL,
-    Incident_Begin_Date date    NULL,
+    Incident_Begin_Date date   NOT NULL,
     Incident_End_Date date   NULL,
     Disaster_Close_Out_Date date   NULL,
     Place_Code integer   NULL,
     Declared_County_Area varchar   NULL,
-    Declaration_Rquest_Number integer   NULL,
+    Declaration_Request_Number integer   NULL,
     CONSTRAINT pk_FEMA PRIMARY KEY (
         ID
-     )
+     ),
+    CONSTRAINT uc_FEMA_Disaster_Number UNIQUE (
+        Disaster_Number
+    )
 );
 
---drop TABLE WILD_FIRE;
 CREATE TABLE WILD_FIRE (
     ID int   NOT NULL,
-    OBJECTID varchar   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
-    DISCOVERY_DATE DATE   NOT NULL,
+    OBJECTID varchar   NOT NULL,
+    FOD_ID INTEGER   NULL,
+    FPA_ID VARCHAR   NULL,
+    SOURCE_SYSTEM_TYPE VARCHAR   NULL,
+    SOURCE_SYSTEM VARCHAR   NULL,
+    NWCG_REPORTING_AGENCY VARCHAR   NULL,
+    NWCG_REPORTING_UNIT_ID VARCHAR   NULL,
     NWCG_REPORTING_UNIT_NAME VARCHAR   NULL,
+    SOURCE_REPORTING_UNIT INTEGER   NULL,
+    SOURCE_REPORTING_UNIT_NAME VARCHAR   NULL,
+    LOCAL_FIRE_REPORT_ID INTEGER   NULL,
+    LOCAL_INCIDENT_ID VARCHAR   NULL,
+    FIRE_CODE VARCHAR   NULL,
+    FIRE_NAME VARCHAR   NULL,
+    ICS_209_INCIDENT_NUMBER VARCHAR   NULL,
+    ICS_209_NAME VARCHAR   NULL,
+    MTBS_ID VARCHAR   NULL,
+    MTBS_FIRE_NAME VARCHAR   NULL,
+    COMPLEX_NAME VARCHAR   NULL,
+    FIRE_YEAR INTEGER   NOT NULL,
+    DISCOVERY_DATE DATE   NOT NULL,
+    DISCOVERY_DOY INTEGER   NOT NULL,
+    DISCOVERY_TIME INTEGER   NULL,
+    STAT_CAUSE_CODE INTEGER   NULL,
+    STAT_CAUSE_DESCR VARCHAR   NULL,
+    CONT_DATE DATE   NULL,
+    CONT_DOY INTEGER   NULL,
+    CONT_TIME INTEGER   NULL,
     FIRE_SIZE FLOAT   NULL,
+    FIRE_SIZE_CLASS VARCHAR   NULL,
     LATITUDE FLOAT   NULL,
     LONGITUDE FLOAT   NULL,
+    OWNER_CODE INTEGER   NULL,
+    OWNER_DESCR VARCHAR   NULL,
     STATE VARCHAR   NULL,
+    COUNTY INTEGER   NULL,
+    FIPS_CODE INTEGER   NULL,
+    FIPS_NAME VARCHAR   NULL,
     CONSTRAINT pk_WILD_FIRE PRIMARY KEY (
         ID
-     )
+     ),
+    CONSTRAINT uc_WILD_FIRE_OBJECTID UNIQUE (
+        OBJECTID
+    )
 );
 
 CREATE TABLE EARTHQUAKE (
@@ -111,12 +133,11 @@ CREATE TABLE EARTHQUAKE (
         EQ_ID
     )
 );
---drop table tornado;
---select count(*) from tornado;
+
 CREATE TABLE TORNADO (
     ID int   NOT NULL,
-    om varchar   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
+    om varchar   NOT NULL,
     yr INTEGER   NOT NULL,
     mo INTEGER   NOT NULL,
     dy INTEGER   NOT NULL,
@@ -124,8 +145,8 @@ CREATE TABLE TORNADO (
     time VARCHAR   NULL,
     tz INTEGER   NULL,
     st VARCHAR   NULL,
-	stf integer null,
-	stn integer null,
+    stf INTEGER   NULL,
+    stn INTEGER   NULL,
     mag INTEGER   NULL,
     inj INTEGER   NULL,
     fat INTEGER   NULL,
@@ -141,9 +162,16 @@ CREATE TABLE TORNADO (
     sn INTEGER   NULL,
     sg INTEGER   NULL,
     f1 INTEGER   NULL,
+    f2 INTEGER   NULL,
+    f3 INTEGER   NULL,
+    f4 INTEGER   NULL,
+    fc INTEGER   NULL,
     CONSTRAINT pk_TORNADO PRIMARY KEY (
         ID
-     )
+     ),
+    CONSTRAINT uc_TORNADO_om UNIQUE (
+        om
+    )
 );
 
 /*
