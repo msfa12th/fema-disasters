@@ -19,8 +19,7 @@ CREATE TABLE DATA_SOURCE (
     SOURCE_TYPE varchar   NOT NULL
 );
 
-create table my_test (
-event_id,event_date)
+
 --drop table natural_disaster;
 --select * from natural_disaster;
 CREATE TABLE NATURAL_DISASTER (
@@ -48,7 +47,7 @@ CREATE TABLE LOCATION (
         ZipCode
      )
 );
-
+--drop TABLE FEMA;
 CREATE TABLE FEMA (
     ID int   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
@@ -62,7 +61,7 @@ CREATE TABLE FEMA (
     Disaster_Type varchar   NULL,
     Incident_Type varchar   NULL,
     Title varchar   NULL,
-    Incident_Begin_Date date   NOT NULL,
+    Incident_Begin_Date date    NULL,
     Incident_End_Date date   NULL,
     Disaster_Close_Out_Date date   NULL,
     Place_Code integer   NULL,
