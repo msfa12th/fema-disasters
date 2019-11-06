@@ -22,7 +22,7 @@ CREATE TABLE DATA_SOURCE (
 create table my_test (
 event_id,event_date)
 --drop table natural_disaster;
-select * from natural_disaster;
+--select * from natural_disaster;
 CREATE TABLE NATURAL_DISASTER (
     EVENT_ID integer   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
@@ -115,11 +115,12 @@ CREATE TABLE EARTHQUAKE (
         EQ_ID
     )
 );
-
+--drop table tornado;
+--select count(*) from tornado;
 CREATE TABLE TORNADO (
     ID int   NOT NULL,
-    DATA_SOURCE varchar   NOT NULL,
     om varchar   NOT NULL,
+    DATA_SOURCE varchar   NOT NULL,
     yr INTEGER   NOT NULL,
     mo INTEGER   NOT NULL,
     dy INTEGER   NOT NULL,
@@ -127,8 +128,8 @@ CREATE TABLE TORNADO (
     time VARCHAR   NULL,
     tz INTEGER   NULL,
     st VARCHAR   NULL,
-    stf INTEGER   NULL,
-    stn INTEGER   NULL,
+	stf integer null,
+	stn integer null,
     mag INTEGER   NULL,
     inj INTEGER   NULL,
     fat INTEGER   NULL,
@@ -144,16 +145,9 @@ CREATE TABLE TORNADO (
     sn INTEGER   NULL,
     sg INTEGER   NULL,
     f1 INTEGER   NULL,
-    f2 INTEGER   NULL,
-    f3 INTEGER   NULL,
-    f4 INTEGER   NULL,
-    fc INTEGER   NULL,
     CONSTRAINT pk_TORNADO PRIMARY KEY (
         ID
-     ),
-    CONSTRAINT uc_TORNADO_om UNIQUE (
-        om
-    )
+     )
 );
 
 /*

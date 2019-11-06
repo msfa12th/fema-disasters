@@ -7,4 +7,9 @@ select id,data_source,DISCOVERY_DATE,data_source,state
 from wild_fire;
 commit;
 
+insert into natural_disaster
+select id,data_source,to_date(date,'mm/dd/yyyy'),data_source,st
+from tornado;
+commit;
+
 
