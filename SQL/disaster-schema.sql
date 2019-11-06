@@ -66,13 +66,10 @@ CREATE TABLE FEMA (
     Disaster_Close_Out_Date date   NULL,
     Place_Code integer   NULL,
     Declared_County_Area varchar   NULL,
-    Declaration_Request_Number integer   NULL,
+    Declaration_Rquest_Number integer   NULL,
     CONSTRAINT pk_FEMA PRIMARY KEY (
         ID
-     ),
-    CONSTRAINT uc_FEMA_Disaster_Number UNIQUE (
-        Disaster_Number
-    )
+     )
 );
 
 --drop TABLE WILD_FIRE;
