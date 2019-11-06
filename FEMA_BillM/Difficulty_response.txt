@@ -1,0 +1,12 @@
+difficulties:
+*finding the data - Once I found the two data sets, Fema and Zip, I had to find a third set, County Zip, to tie the two
+
+* Null values - I had to make sure that certain columns did not have constraints when importing the data via Python.
+
+* Data Type:  I had to make sure that Date and Time were imported correctly syntatically.  I also had to make some fields/columns had the data correctly formated
+
+* Primary key:  Zip codes could not be unique values because a zip code can multiple citys in a county. To rectify this I
+	had to add addition column to that count the rows in the .csv file by using the function =row() add the numbers. I
+	then set that field as the primary
+
+* I confirmed my data by join my tables and making sure that the total count of the original set was not exceeding in the results
