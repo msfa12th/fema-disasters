@@ -1,0 +1,16 @@
+DROP TABLE EARTHQUAKE;
+
+CREATE TABLE EARTHQUAKE (
+	ID VARCHAR NOT NULL
+	, Date VARCHAR
+	, Time VARCHAR
+	, Latitude FLOAT
+	, Longitude FLOAT
+	, Disaster_Type TEXT
+	, Depth FLOAT
+	, Magnitude FLOAT
+	, Magnitude_Type TEXT
+	, Data_Source VARCHAR
+	, Status VARCHAR
+	, CONSTRAINT pk_EARTHQUAKE PRIMARY KEY (ID)
+);
