@@ -64,13 +64,10 @@ CREATE TABLE FEMA (
     Disaster_Close_Out_Date date   NULL,
     Place_Code integer   NULL,
     Declared_County_Area varchar   NULL,
-    Declaration_Request_Number integer   NULL,
+    Declaration_Rquest_Number integer   NULL,
     CONSTRAINT pk_FEMA PRIMARY KEY (
         ID
-     ),
-    CONSTRAINT uc_FEMA_Disaster_Number UNIQUE (
-        Disaster_Number
-    )
+     )
 );
 
 --drop TABLE WILD_FIRE;
@@ -105,10 +102,7 @@ CREATE TABLE EARTHQUAKE (
     Status VARCHAR   NULL,
     CONSTRAINT pk_EARTHQUAKE PRIMARY KEY (
         ID
-     ),
-    CONSTRAINT uc_EARTHQUAKE_EQ_ID UNIQUE (
-        EQ_ID
-    )
+     )
 );
 
 CREATE TABLE TORNADO (
@@ -141,10 +135,7 @@ CREATE TABLE TORNADO (
     f1 INTEGER   NULL,
     CONSTRAINT pk_TORNADO PRIMARY KEY (
         ID
-     ),
-    CONSTRAINT uc_TORNADO_om UNIQUE (
-        om
-    )
+     )
 );
 
 /*
