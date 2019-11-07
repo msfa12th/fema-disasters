@@ -7,6 +7,11 @@ The strength of these natural diasaters will be compared to known FEMA disaster 
 - Project Proposal describing above and listing the specific datasets used in the project
 - QuickD&D schema and Entity Relational Diagram (ERD)
 
+## Application Execution Steps
+1. from PGADMIN execute two sql scripts (disaster-db.sql and disaster-schema.sql)
+2. from each source directory execute source jupyter
+3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql)
+
 ### EARTHQUAKE_Brendan
 - Jupyter Notebook (Python) file that details how the data was cleaned and connected to SQLAlchemy, the initial sqlite file that creates table into PosstgrSQL, and the final cleaned up Earhquake CSV
 
@@ -25,3 +30,5 @@ The strength of these natural diasaters will be compared to known FEMA disaster 
 
 ### ERD for FEMA-Disaster Tables
 ![](https://github.com/msfa12th/fema-disasters/blob/master/DOC/disaster-schema.png)
+
+
