@@ -1,7 +1,12 @@
 # FEMA Disaster Database
 Construction of a Comprehensive Database for earthquakes, wildfires, and tornados affecting the United States of America the past few decades.
 
-The strength and location of these natural diasaters will be compared to known FEMA disaster declarations which states qualify for the most federal funding for disaster relief.
+# QUESTIONS the data will answer:
+We will investigate the frequency and location of these natural diasaters and compare to frequency/location of FEMA disaster declarations.  
+1. From this data we should be able to see based on the comparison, if state should receive more funding (if number of disasters far exceeds number of disaster declarations.
+2. Which states receive the most FEMA disaster funding
+3. Which states have the most disasters.
+4. Which states receive the least FEMA disaster funding.
 
 ### DOC
 - Project Proposal describing above and listing the specific datasets used in the project
@@ -19,7 +24,7 @@ The strength and location of these natural diasaters will be compared to known F
 3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql)
 
 ### EARTHQUAKE
-- Jupyter Notebook (Python) file that details how the data was cleaned and connected to SQLAlchemy, the initial sqlite file that creates table into PosstgrSQL, and the final cleaned up Earhquake CSV
+- Jupyter Notebook (Python) file that details how the data was cleaned and connected to SQLAlchemy, the initial sqlite file that creates table into PosstgrSQL, and the final cleaned up Earthquake CSV
 
 ### FEMA
 - **BILLM_County_ZIP:** Folders dedicated to PostgrSQL table County_Zip (locational data such as Zip Code)
@@ -29,10 +34,10 @@ The strength and location of these natural diasaters will be compared to known F
 - Folder with SQL schema creating all final tables in PostgrSQL
 
 ### TORNADO
-- Initial Tornado SQL Table code, the Tornadorawdata.csv, and Jupyter Notebook file that cleaned up and loaded the CSV data into SQLAlchemy
+- Initial Tornado SQL Table code, the Tornadorawdata.csv, and Jupyter Notebook file that cleaned up and loaded the CSV data into PostgreSQL
 
 ### WILDFIRE
-- Wildfire raw data Folder and Jupyter Notebook file detailing cleanup and loading into SQLAlchemy.  The raw data for this section had to be divided into 95 files because of the sheer size of the original file.
+- Wildfire raw data Folder and Jupyter Notebook file detailing cleanup and loading into PostgreSQL.  The raw data for this section had to be divided into 95 files because of the sheer size of the original file.
 
 ### ERD for FEMA-Disaster Tables
 ![](https://github.com/msfa12th/fema-disasters/blob/master/DOC/disaster-schema.png)
