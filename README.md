@@ -21,3 +21,4 @@ The strength of these natural diasaters will be compared to known FEMA disaster 
 - Initial Tornado SQL Table code, the Tornadorawdata.csv, and Jupyter Notebook file that cleaned up and loaded the CSV data into SQLAlchemy
 
 ### WILDFIRE_Pournima
+- Wildfire raw data Folder and Jupyter Notebook file detailing cleanup and loading into SQLAlchemy.  The raw data for this section had to be divided into 95 files because of the sheer size of the original file.
