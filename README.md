@@ -27,8 +27,8 @@ We will investigate the frequency and location of these natural diasaters and co
 - Jupyter Notebook (Python) file that details how the data was cleaned and connected to SQLAlchemy, the initial sqlite file that creates table into PosstgrSQL, and the final cleaned up Earthquake CSV
 
 ### FEMA
-- **BILLM_County_ZIP:** Folders dedicated to PostgrSQL table County_Zip (locational data such as Zip Code)
-- **BILLM_Fema:** Folder dedicated to table Fema_Disaster (what, how, and when FEMA declares an event a disaster)
+- **Location data ... County_ZIP:** Folders dedicated to PostgrSQL table County_Zip (locational data such as Zip Code)
+- **Fema data:** Folder dedicated to table Fema_Disaster (what, how, and when FEMA declares an event a disaster)
 
 ### SQL
 - Folder with SQL schema creating all final tables in PostgrSQL
