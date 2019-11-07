@@ -1,7 +1,7 @@
 # FEMA Disaster Database
 Construction of a Comprehensive Database for earthquakes, wildfires, and tornados affecting the United States of America the past few decades.
 
-The strength of these natural diasaters will be compared to known FEMA disaster declarations to determine if the former qualify for federal funding for disaster relief.
+The strength and location of these natural diasaters will be compared to known FEMA disaster declarations which states qualify for the most federal funding for disaster relief.
 
 ### DOC
 - Project Proposal describing above and listing the specific datasets used in the project
