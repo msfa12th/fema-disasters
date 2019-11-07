@@ -10,11 +10,11 @@ The strength of these natural diasaters will be compared to known FEMA disaster 
 ## Application Execution Steps
 1. from PGADMIN execute two sql scripts (disaster-db.sql and disaster-schema.sql)
 2. from each source directory execute source jupyter:
-     Wildfire_Pourninma/wildfire.ipynb
-     Tornado_Jackie/tornado.ipynb
-     FEMA_BillM/FEMA*.ipynb
-     FEMA_BillM/Locations*.ipynb
-     EARTHQUAKE_Brendan/Earthquake.ipynb
+     1. Wildfire_Pourninma/wildfire.ipynb
+     2. Tornado_Jackie/tornado.ipynb
+     3. FEMA_BillM/FEMA*.ipynb
+     4. FEMA_BillM/Locations*.ipynb
+     5. EARTHQUAKE_Brendan/Earthquake.ipynb
 3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql)
 
 ### EARTHQUAKE
