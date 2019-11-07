@@ -21,7 +21,7 @@ We will investigate the frequency and location of these natural diasaters and co
      3. FEMA/FEMA*.ipynb
      4. FEMA/Locations*.ipynb
      5. EARTHQUAKE_Brendan/Earthquake.ipynb
-3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql)
+3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql, both in the SQL directory)
 
 ### EARTHQUAKE
 - Jupyter Notebook (Python) file that details how the data was cleaned and connected to SQLAlchemy, the initial sqlite file that creates table into PosstgrSQL, and the final cleaned up Earthquake CSV
