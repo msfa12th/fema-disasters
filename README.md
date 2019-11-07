@@ -16,10 +16,10 @@ We will investigate the frequency and location of these natural diasaters and co
 ## Application Execution Steps
 1. from PGADMIN execute two sql scripts (disaster-db.sql and disaster-schema.sql)
 2. from each source directory execute source jupyter:
-     1. Wildfire_Pourninma/wildfire.ipynb
-     2. Tornado_Jackie/tornado.ipynb
-     3. FEMA_BillM/FEMA*.ipynb
-     4. FEMA_BillM/Locations*.ipynb
+     1. Wildfire/wildfire.ipynb
+     2. Tornado/tornado.ipynb
+     3. FEMA/FEMA*.ipynb
+     4. FEMA/Locations*.ipynb
      5. EARTHQUAKE_Brendan/Earthquake.ipynb
 3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql)
 
