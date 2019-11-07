@@ -6,6 +6,7 @@ The strength of these natural diasaters will be compared to known FEMA disaster 
 ### DOC
 - Project Proposal describing above and listing the specific datasets used in the project
 - QuickD&D schema and Entity Relational Diagram (ERD)
+- Challenges Document outlines issues with CSV's, jupyter code, and PostgrSQL in detail.
 
 ## Application Execution Steps
 1. from PGADMIN execute two sql scripts (disaster-db.sql and disaster-schema.sql)
