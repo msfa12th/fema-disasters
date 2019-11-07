@@ -22,3 +22,6 @@ The strength of these natural diasaters will be compared to known FEMA disaster 
 
 ### WILDFIRE_Pournima
 - Wildfire raw data Folder and Jupyter Notebook file detailing cleanup and loading into SQLAlchemy.  The raw data for this section had to be divided into 95 files because of the sheer size of the original file.
+
+### ERD for FEMA-Disaster Tables
+![](DOC/disaster-schema.PNG)
