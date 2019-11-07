@@ -14,7 +14,7 @@ We will investigate the frequency and location of these natural diasaters and co
 - Challenges Document outlines issues with CSV's, jupyter code, and PostgrSQL in detail.
 
 ## Application Execution Steps
-1. from PGADMIN execute two sql scripts (disaster-db.sql and disaster-schema.sql)
+1. from PGADMIN execute two sql scripts (disaster-db.sql and disaster-schema.sql, both in the SQL directory)
 2. from each source directory execute source jupyter:
      1. Wildfire/wildfire.ipynb
      2. Tornado/tornado.ipynb
