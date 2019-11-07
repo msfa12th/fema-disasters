@@ -20,7 +20,7 @@ We will investigate the frequency and location of these natural diasaters and co
      2. TORNADO/tornado.ipynb
      3. FEMA/FEMA*.ipynb
      4. FEMA/Locations*.ipynb
-     5. EARTHQUAKE_Brendan/Earthquake.ipynb
+     5. EARTHQUAKE/Earthquake.ipynb
 3. from PGAMDIN execute two sql scriopts (disaster-combine.sql and disaster-analysis.sql, both in the SQL directory)
 
 ### EARTHQUAKE
