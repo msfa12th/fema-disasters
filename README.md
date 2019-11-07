@@ -1,5 +1,5 @@
 # FEMA Disaster Database
-Construction of a Comprehensive Database for earthquakes, wildfires, and tornados affecting the United States of America the past few decades, along with FEMA disaster declarations.
+Construction of a Comprehensive Historical Database for earthquakes, wildfires, and tornados affecting the US, along with FEMA disaster declarations.
 
 # QUESTIONS the data will answer:
 We will investigate the frequency and location of these natural diasaters and compare to frequency/location of FEMA disaster declarations.  
