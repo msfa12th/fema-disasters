@@ -21,7 +21,7 @@ The strength and location of these natural diasaters will be compared to known F
 ### EARTHQUAKE
 - Jupyter Notebook (Python) file that details how the data was cleaned and connected to SQLAlchemy, the initial sqlite file that creates table into PosstgrSQL, and the final cleaned up Earhquake CSV
 
-### FEMA_BillM
+### FEMA
 - **BILLM_County_ZIP:** Folders dedicated to PostgrSQL table County_Zip (locational data such as Zip Code)
 - **BILLM_Fema:** Folder dedicated to table Fema_Disaster (what, how, and when FEMA declares an event a disaster)
 
