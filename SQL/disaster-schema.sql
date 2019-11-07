@@ -15,22 +15,25 @@ CREATE TABLE NATURAL_DISASTER (
     EVENT_ID varchar   NOT NULL,
     event_date date   NOT NULL,
     event_type varchar   NOT NULL,
-    state varchar   NOT NULL,
+    state varchar   NULL,
     CONSTRAINT pk_NATURAL_DISASTER PRIMARY KEY (
         DATA_SOURCE,EVENT_ID
      )
 );
 
+<<<<<<< HEAD
+--drop TABLE LOCATION ;
+=======
+>>>>>>> 07fdd839ea4d72cdcf5fa4aa0db51aaa884b68df
 CREATE TABLE LOCATION (
+    ID int   NOT NULL,
     ZipCode VARCHAR   NOT NULL,
     City VARCHAR   NOT NULL,
     State VARCHAR   NOT NULL,
     Latitude FLOAT   NOT NULL,
     Longitude FLOAT   NOT NULL,
-    Classification VARCHAR   NULL,
-    Population INTEGER   NULL,
     CONSTRAINT pk_LOCATION PRIMARY KEY (
-        ZipCode
+        id
      )
 );
 
@@ -109,11 +112,11 @@ CREATE TABLE WILD_FIRE (
         OBJECTID
     )
 );
-
+--drop table earthquake;
 CREATE TABLE EARTHQUAKE (
     ID int   NOT NULL,
     DATA_SOURCE varchar   NOT NULL,
-    EQ_ID VARCHAR   NOT NULL,
+    Earthq_ID VARCHAR   NOT NULL,
     Date VARCHAR   NOT NULL,
     Time VARCHAR   NULL,
     Latitude FLOAT   NOT NULL,
@@ -123,15 +126,10 @@ CREATE TABLE EARTHQUAKE (
     Magnitude FLOAT   NULL,
     Magnitude_Type VARCHAR   NULL,
     Source VARCHAR   NULL,
-    Location_Source VARCHAR   NULL,
-    Magnitude_Source VARCHAR   NULL,
     Status VARCHAR   NULL,
     CONSTRAINT pk_EARTHQUAKE PRIMARY KEY (
         ID
-     ),
-    CONSTRAINT uc_EARTHQUAKE_EQ_ID UNIQUE (
-        EQ_ID
-    )
+     )
 );
 
 CREATE TABLE TORNADO (
