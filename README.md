@@ -1,7 +1,7 @@
 # FEMA Disaster Database
 Construction of a Comprehensive Historical Database for earthquakes, wildfires, and tornados affecting the US, along with FEMA disaster declarations.
 
-# QUESTIONS the data will answer:
+### QUESTIONS the data will answer:
 We will investigate the frequency and location of these natural diasaters and compare to frequency/location of FEMA disaster declarations.  
 1. From this data we should be able to see based on the comparison, if state should receive more funding (if number of disasters far exceeds number of disaster declarations.
 2. Which states receive the most FEMA disaster funding
