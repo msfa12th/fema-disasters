@@ -6,7 +6,7 @@ CREATE TABLE TORNADO (
     mo INTEGER   NOT NULL,
     dy INTEGER   NOT NULL,
     date VARCHAR   NOT NULL,
-    time VARCHAR   NULL,
+    time time(0)   NULL,
     tz INTEGER   NULL,
     states VARCHAR   NULL,
     stf INTEGER   NULL,
